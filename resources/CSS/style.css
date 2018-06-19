@@ -11,16 +11,52 @@ body {
 header {
     display: flex;
     position: fixed;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid seashell;
     width: 100%;
     align-items: center;
+    background-color: black;
+}
+
+a {
+    color: seashell;
+}
+
+h2, h4 {
+    margin: 15px;
 }
 
 .logo {
     display: flex;
     flex-grow: 1;
+    padding: 9.5px 10px;
 }
 
-nav {
+nav span {
+    display: inline-block;
+    padding: 20px 10px;
+}
 
+.content {
+    display: flex;
+    align-items: center;
+    padding-top: 69px;
+    flex-flow: column;
+}
+
+.mission-image {
+    display: flex;
+    height: 700px;
+    width: 1200px;
+    background-image: url("../../resources/images/img-mission-background.jpg");
+    align-items: center;
+}
+
+.mission {
+    width: 100%;
+    background-color: black;
+}
+
+.tea {
+    width: 1000px;
+    padding-top: 40px;
 }
