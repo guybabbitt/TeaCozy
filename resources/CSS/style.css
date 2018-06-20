@@ -1,3 +1,4 @@
+/* Universal Project Styles */
 body {
     margin: 0;
     font-family: Helvetica;
@@ -21,9 +22,19 @@ a {
     color: seashell;
 }
 
-h2, h4, h3 {
+h2, 
+h3, 
+h4 {
     margin: 15px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Header */
 
 .logo {
     display: flex;
@@ -51,12 +62,12 @@ nav span {
     align-items: center;
 }
 
-.mission {
+#mission {
     width: 100%;
     background-color: black;
 }
 
-.tea {
+#tea {
     width: 1000px;
     padding-top: 40px;
 }
@@ -82,7 +93,7 @@ nav span {
     align-items: center;
 }
 
-.locations {
+#locations {
     display: flex;
 }
 
@@ -92,11 +103,16 @@ nav span {
     flex-direction: column;
     background-color: black;
     margin: 15px;
+    opacity: 1;
 }
 
 .location span {
     display: flex;
     justify-content: center;
     margin: 15px auto;
-    opacity: 1;
+}
+
+.copyright {
+    text-align: left;
+    margin-left: 20px;
 }
