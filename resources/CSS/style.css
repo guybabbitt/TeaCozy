@@ -21,7 +21,7 @@ a {
     color: seashell;
 }
 
-h2, h4 {
+h2, h4, h3 {
     margin: 15px;
 }
 
@@ -59,4 +59,44 @@ nav span {
 .tea {
     width: 1000px;
     padding-top: 40px;
+}
+
+.items {
+    width: 1000px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.item {
+    margin: 10px;
+}
+
+.locations-image {
+    background-image: url("../../resources/images/img-locations-background.jpg");
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations {
+    display: flex;
+}
+
+.location {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 15px;
+}
+
+.location span {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    opacity: 1;
 }
