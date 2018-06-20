@@ -1,21 +1,11 @@
 /* Universal Project Styles */
 body {
     margin: 0;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color:black;
-    opacity: 0.9;
     text-align: center;
-}
-
-header {
-    display: flex;
-    position: fixed;
-    border-bottom: 1px solid seashell;
-    width: 100%;
-    align-items: center;
-    background-color: black;
 }
 
 a {
@@ -25,7 +15,8 @@ a {
 h2, 
 h3, 
 h4 {
-    margin: 15px;
+    margin: 0;
+    padding: 10px;
 }
 
 .flex-container {
@@ -35,11 +26,24 @@ h4 {
   }
 
   /* Header */
+  header {
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    height: 69px;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+}
 
-.logo {
-    display: flex;
+header img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+nav {
+    text-align: right;
     flex-grow: 1;
-    padding: 9.5px 10px;
 }
 
 nav span {
@@ -47,54 +51,66 @@ nav span {
     padding: 20px 10px;
 }
 
-.content {
-    display: flex;
+/* Body Content */
+.main-container {
     align-items: center;
     padding-top: 69px;
-    flex-flow: column;
-}
-
-.mission-image {
-    display: flex;
-    height: 700px;
+    margin: auto;
+    opacity: 0.9;
     width: 1200px;
-    background-image: url("../../resources/images/img-mission-background.jpg");
-    align-items: center;
 }
 
 #mission {
+    height: 700px;
+    background-image: url("../../resources/images/img-mission-background.jpg");
+    align-items: center;
+    padding-top: 70px;
+}
+
+#mission .content {
     width: 100%;
+    margin: auto;
     background-color: black;
 }
 
+/* Items */
 #tea {
     width: 1000px;
-    padding-top: 40px;
-}
-
-.items {
-    width: 1000px;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+    height: 700px;
+    padding-top: 70px;
+    margin: auto;
 }
 
 .item {
+    padding: 5px;
+}
+
+.item img {
+    height: 200px;
     margin: 10px;
+    display: block;
 }
 
-.locations-image {
+.item span {
+    display:block;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Locations */
+#locations-container {
     background-image: url("../../resources/images/img-locations-background.jpg");
-    width: 1200px;
     height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 70px;
 }
 
-#locations {
-    display: flex;
+#locations-container .flex-container {
+    width: 1100px;
+    margin: auto;
+}
+
+.flex-container.locations {
+    padding-top: 5px;
 }
 
 .location {
@@ -112,7 +128,13 @@ nav span {
     margin: 15px auto;
 }
 
-.copyright {
+/* Contact */
+#contact {
+    height: 200px;
+}
+
+/* Footer */
+footer {
     text-align: left;
-    margin-left: 20px;
+    padding-left: 20px;
 }
